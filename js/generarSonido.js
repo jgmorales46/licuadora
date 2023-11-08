@@ -7,18 +7,18 @@ var licuadora = document.getElementById("blender");
 function controlarLicuadora() {
   if ( estadoLicuadora == "apagado" ) {
     estadoLicuadora = "encendido";
-    hacerBrrBrr();
+    hacerSonido();
     licuadora.classList.add("active");
     /* document.getElementById( "blender-button" ).style.backgroundColor = "green"; */
   } else {
     estadoLicuadora = "apagado";
-    hacerBrrBrr();
+    hacerSonido();
     licuadora.classList.remove("active");
     /* document.getElementById( "blender-button" ).style.backgroundColor = "red"; */
   }
 }
 
-function hacerBrrBrr() {
+function hacerSonido() {
 if( sonidoLicuadora.paused ){
     botonLicuadora.play();
     sonidoLicuadora.play();
